@@ -1,8 +1,9 @@
 .mat-card{
   
     display: inline-block;
-    max-width: 230px;
-    margin: auto;
+    max-width: 220px;
+    margin: 20px;
+    flex-basis: 25%;
     margin-left: auto;
     
 }

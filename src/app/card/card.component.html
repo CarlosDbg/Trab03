@@ -15,7 +15,7 @@
 
 </mat-card>
 
-<mat-card style="position: relative; left: 60px;">
+<mat-card>
     <mat-card-header>
         <div mat-card-avatar class="lalaland" ></div>
 
@@ -32,7 +32,7 @@
 
 </mat-card>
 
-<mat-card style="position: relative; left: 140px;">
+<mat-card>
     <mat-card-header>
         <div mat-card-avatar class="harry"></div>
 
@@ -49,7 +49,7 @@
 
 </mat-card>
 
-<mat-card style="position: relative; left: 220px;">
+<mat-card>
     <mat-card-header>
         <div mat-card-avatar class="beetleJuice"></div>
 
@@ -67,7 +67,7 @@
 </mat-card>
 
 
-<mat-card style="position: relative; top: 540px; right: 1045px;">
+<mat-card>
     <mat-card-header>
         <div mat-card-avatar class="vingadores"></div>
 
@@ -84,7 +84,7 @@
 
 </mat-card>
 
-<mat-card style="position: relative; top: 18px; left: 320px; ">
+<mat-card>
     <mat-card-header>
         <div mat-card-avatar class="thor-ragn"></div>
 
@@ -101,13 +101,13 @@
 
 </mat-card> 
 
-<mat-card *ngFor= "let filme of dadosService.filmes" style="position: relative; top: -355px; left: 400px; margin-bottom: 2px;">
+<mat-card *ngFor= "let filme of dadosService.filmes">
     <mat-card-header>
         
 
         <mat-card-title>{{filme.titulo}}</mat-card-title>
     </mat-card-header>
-    <img mat-card-image>{{filme.imagem}}
+    <img mat-card-image [src]="filme.imagem">
 
     <mat-card-content>
         <p>
